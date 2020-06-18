@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/todo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_title_label"
+            android:inputType="text"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/todo_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_description_label"
+            android:inputType="textMultiLine"
+            android:textSize="24sp" />
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/due_date" />
+
+        <Button
+            android:id="@+id/todo_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showDatePicker"
+            android:text="@string/todo_date_label" />
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/priority" />
+        <!-- RadioGroup for visible selection of a priority -->
+        <RadioGroup
+            android:id="@+id/priorityGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/highPriorityButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/highPriorityRed"
+                android:checked="true"
+                android:text="@string/high_priority"
+                android:theme="@style/WhiteRadioButton" />
+
+            <RadioButton
+                android:id="@+id/mediumPriorityButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/mediumPriorityOrange"
+                android:text="@string/med_priority"
+                android:theme="@style/WhiteRadioButton" />
+
+            <RadioButton
+                android:id="@+id/lowPriorityButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lowPriorityYellow"
+                android:text="@string/low_priority"
+                android:theme="@style/WhiteRadioButton" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/todo_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/todo_complete_label" />
+
+        <LinearLayout
+            android:id="@+id/button_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp">
+
+            <Button
+                android:id="@+id/button_delete"
+                style="@style/delete_button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_delete" />
+
+            <Button
+                android:id="@+id/button_save"
+                style="@style/save_button_style"
+                android:text="@string/button_save" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

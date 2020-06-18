@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/colorPrimaryLight"
+    android:layout_marginBottom="2dp">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerview_todo_title"
+        style="@style/text_view_style"
+        tools:text="placeholder text" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerview_todo_date"
+        android:layout_weight=".8"
+        style="@style/todo_date_view_style"/>
+
+</LinearLayout>
