@@ -9,7 +9,8 @@ A new Todo can be created by clicking the `+`
 ### 2. Viewing a Todo
 A Todo can be viewed by clicking the title of the Todo
 ### 3. Updating Todo
-A Todo can be updated by viewing the Todo detail, making the required changes### 4. Deleting Todo
+A Todo can be updated by viewing the Todo detail, making the required changes
+### 4. Deleting Todo
 A Todo can be deleted by viewing the Todo detail and clicking the `Delete` button or by swiping Todo left or right from screen.
 ## Other Features
 ### 1. Todos Prioritized by Colors!
