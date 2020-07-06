@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.example.todoapp.view.MainActivity;
+import com.example.todoapp.viewmodel.SimpleBrowserActivity;
 
 public class SplashActivity extends AppCompatActivity {
     @Override
@@ -18,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 try {
                     Thread.sleep(8000);
-                    Intent intent=new Intent(getApplicationContext(), MainActivity.class);
+                    Intent intent=new Intent(getApplicationContext(), SimpleBrowserActivity.class);
                     startActivity(intent);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -31,6 +33,11 @@ public class SplashActivity extends AppCompatActivity {
     protected void onPause(){
         super.onPause();
         finish();
+    }
+
+    public void chrome(View view) {
+        Intent intent=new Intent(getApplicationContext(), SimpleBrowserActivity.class);
+        startActivity(intent);
     }
 }
 

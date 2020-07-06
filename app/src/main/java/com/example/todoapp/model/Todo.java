@@ -35,7 +35,7 @@ public class Todo implements Serializable {
     @ColumnInfo(name = "priority")
     private int mPriority;
 
-    // Empty constructor
+
     @Ignore
     public Todo() {}
 

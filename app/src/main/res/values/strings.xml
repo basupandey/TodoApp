@@ -6,7 +6,7 @@
     <string name="todo_title_hint">Todo...</string>
     <string name="button_save">Add</string>
     <string name="empty_not_saved">empty cannot be saved.</string>
-    <string name="todo_description_label">Description</string>
+    <string name="todo_description_label">Describe your taskEntry...</string>
     <string name="todo_complete_label">Completed</string>
     <string name="clear_all_data">Clear All</string>
     <string name="todo_updated">Todo App Updated Successfully</string>

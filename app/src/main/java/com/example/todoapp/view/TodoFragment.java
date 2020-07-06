@@ -254,6 +254,9 @@ public class TodoFragment extends Fragment {
 
 
             MenuItem item = menu.findItem(R.id.menu_item_share_todo);
+
+
+
             mTodoShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(item);
 
             final Intent todoDetailSharingIntent = new Intent(Intent.ACTION_SEND);
@@ -331,6 +334,17 @@ public class TodoFragment extends Fragment {
                 break;
         }
     }
+
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        int id=item.getItemId();
+//        switch (id){
+//            case R.id.btn_help:
+//                Intent inten=new Intent();
+//                startActivity(inten);
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
